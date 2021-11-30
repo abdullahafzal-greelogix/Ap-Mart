@@ -1,0 +1,377 @@
+.btn:focus, .btn.focus{
+		box-shadow: none !important;
+}
+// header
+.navbar-row{
+	margin-bottom: 15px;
+}
+.active{
+	a{
+	color: #02AA31 !important;
+    }
+}
+.nav-item {
+	a{
+		color:#5C5E70;
+		font-size: 14px;
+		font-weight: 500;
+		font-family: 'Jost', sans-serif;
+		position: relative;
+		padding: 8px 20px !important;
+	}
+	a:before{
+		content:"";
+		position: absolute;
+		top: 8px;
+		right: 0;
+        background-color: #E0E0E0;
+        height: 20px;
+        width: 1px;
+	}
+	a:hover{
+		color: #02AA31;
+	}
+}
+.app-img{
+	img{
+	    width: 100%;
+		height: 100%;
+		padding-top: 4px;	
+	}
+}
+.ap-location{
+	h6{
+		color: #5C5E70;
+		font-size: 14px;
+		font-weight: 400;
+		font-family: 'Jost', sans-serif;
+	}
+	h5{
+		color: #02AA31;
+		font-size: 16px;
+		font-weight: 400;
+		font-family: 'Jost', sans-serif;
+	}
+}
+.ap-location:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 11px;
+    background-color: #E0E0E0;
+    height: 20px;
+    width: 1px;
+ }
+
+.app-search{
+	input{
+		width: 100%;
+		border:1px solid #F5F5F5;
+		background-color: #F5F5F5;
+		height: 45px;
+		padding-left: 40px;
+		font-size: 14px;
+		font-weight: 400;
+		font-family: 'Jost', sans-serif;
+		border-radius: 30px;
+		outline:none;
+		color: #5C5E70;
+		position: relative;
+	}
+	.app-search-icon{
+		color: #5C5E70;
+		font-size: 14px;
+		position: absolute;
+		left: 33px;
+		top: 16px;
+	}
+}
+.app-search:before{
+		content: "";
+	    position: absolute;
+	    top: 9px;
+	    right:-13px;
+	    background-color: #E0E0E0;
+	    height: 20px;
+	    width: 1px;
+}
+.app-login{
+	text-align: right;
+
+	button{
+		height: 40px;
+		width: 90px;
+		background-color: #02AA31;
+		color: white;
+		font-size: 14px;
+		font-weight: 400;
+		font-family: 'Jost', sans-serif;
+	}
+	.btn:focus, .btn.focus{
+		box-shadow: none;
+	}
+	i{
+		color: black;
+		font-size: 20px;
+		margin-left: 15px;
+	}
+}
+// header
+
+// content
+.content{
+   background-image: url(../img/bg.png);
+   background-size: cover;
+   background-position: right;
+  .content-parent{
+  	height: 55vh;
+  }
+  .content-paragraph{
+  	position: relative;
+  	transform: transalateY(-35%);
+  	top: 35%;
+	h2{
+		color: #02062E;
+		font-size: 44px;
+		font-weight: 500;
+		font-family: 'Jost', sans-serif;
+	}
+	p{
+		color: #5C5E70;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+		font-family: 'Jost', sans-serif;
+	}
+  }
+}
+// content
+
+// popular-brand
+.popular-brand{
+	padding: 40px 0px;
+}
+.popular-brand-heading{
+	margin-bottom: 60px;
+	h4{
+		color: #02062E;
+		font-size: 30px;
+		font-weight: 500;
+		font-family: 'Jost', sans-serif;
+	}
+}
+.popular-box{
+	img{
+		height: 100%;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.popular-content{
+		text-align: center;
+		h6{
+			color: #02062E;
+			font-size: 18px;
+			font-weight: 500;
+		    font-family: 'Jost', sans-serif;
+		}
+		p{
+			color: #5C5E70;
+			font-size: 16px;
+			font-weight: 400;
+		    font-family: 'Jost', sans-serif;
+		}
+	}
+}
+// popular brand
+
+// grocy
+
+.grocy{
+	padding-bottom: 40px;
+}
+.grocy-heading{
+	margin-bottom: 40px;
+	position: relative;
+	
+	h4{
+		color: #02062E;
+		font-size: 30px;
+		font-weight: 500;
+		font-family: 'Jost', sans-serif
+	}
+	img{
+		width: 3%;
+		position: absolute;
+		right: 0;
+		top: 3px;
+	}
+}
+.grocy-box{
+	img{
+		width: 100%;
+		margin-bottom: 15px;
+		border-radius: 12px;
+	}
+}
+.grocy-content{
+	h6{
+        color: #02062E;
+        font-size: 18px;
+        font-weight: 500;
+		font-family: 'Jost', sans-serif;
+	}
+	p{
+       color: #5C5E70;
+       font-size: 16px;
+       font-weight: 400;
+	   font-family: 'Jost', sans-serif
+	}
+	ul{
+       padding-left: 0px;
+	}
+	li{
+		list-style: none;
+        color:#02062E;
+        font-size: 14px;
+        font-weight: 400;
+	   font-family: 'Jost', sans-serif;
+	   margin-bottom: 8px;
+	}
+	i{
+		color: #FFB400;
+		font-size: 14px;
+		padding-right: 10px;
+	}
+	.grocry-color{
+	color: #F22D51;
+    }
+    .grocry-color i{
+    	font-size: 14px;
+    	color: #F22D51;
+    }
+}
+// grocry
+
+// shop
+.shop{
+	background-image: url(../img/bg2.png);
+	background-size: cover;
+	padding: 90px 0px;
+}
+.shop-box{
+	background-color: white;
+	border-radius: 12px;
+	padding: 40px;
+	h4{
+       color: #02062E;
+       font-size: 30px;
+       margin-bottom: 15px;
+       font-weight: 500;
+	   font-family: 'Jost', sans-serif;
+	}
+	p{
+       color: #5C5E70;
+       font-size: 16px;
+       line-height: 24px;
+       font-weight: 400;
+	   font-family: 'Jost', sans-serif;
+	}
+	button{
+       height: 40px;
+		width: 120px;
+		background-color: #02AA31;
+		color: white;
+		font-size: 14px;
+		border:1px solid #02AA31;
+		font-weight: 400;
+		font-family: 'Jost', sans-serif;
+	}
+	button:hover{
+		background-color: #02AA31;
+		border:1px solid #02AA31;
+	}
+}
+// shop
+
+// footer
+
+.footer{
+	background-color: #02062E;
+	padding: 90px 0px 40px;
+}
+.footer-sec{
+	img{
+       width: 50%;
+       margin-bottom: 40px;
+	}
+	h3{
+		font-size: 18px;
+		color: white;
+		margin-bottom: 55px;
+	}
+	ul{
+       padding-left: 0px;
+	}
+	li{
+       list-style: none;
+       margin-bottom: 18px;
+	}
+	a{
+       font-size: 16px;
+       color: white;
+       text-decoration: none !important;
+       font-weight: 300;
+	   font-family: 'Jost', sans-serif;
+	}
+	a:hover{
+		color: white;
+	}
+	span{
+		color: #FFFFFF;
+		font-size: 16px;
+		display: table-cell;
+	}
+	i{
+		font-size: 16px;
+		padding-right: 10px;
+	}
+	.social-images{
+		width: 70%;
+		margin-bottom: 0px;
+	}
+}
+.footer-copyright{
+	padding-top: 60px;
+	p{
+		color: white;
+		font-size: 16px;
+		font-weight: 300;
+	   font-family: 'Jost', sans-serif;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
