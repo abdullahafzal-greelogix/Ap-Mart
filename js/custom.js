@@ -17,30 +17,34 @@ wow.init();
 
 
 
-const data=[
-{
-  imgURL:'img/boy.png'
-
-},
-{
-   imgURL:'img/boy.png'
-}
-]
-
-let counter=0
-
-let btnNext=document.querySelector('#btn-next')
-
-let imgNext=document.querySelector('#img-next')
+function myFunction() {
+      var x = document.getElementById("Demo");
+      if (x.className.indexOf("w3-show") == -1) { 
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
 
 
-function getData(){
-  let datas=data[counter];
-  imgNext.src=datas.imgURL
-}
 
-btnNext.addEventListner('click',()=>{
-  counter ++;
-  console.log('clicks')
-  getData();
-})
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+
