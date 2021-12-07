@@ -21,6 +21,9 @@
 	color: #02AA31 !important;
     }
 }
+.navbar-expand-lg{
+	padding: 10px 0px !important;
+}
 .nav-item {
 	a{
 		color:#5C5E70;
@@ -387,7 +390,13 @@
 // shop-page------------------
 // header two
 .location-navbar{
-	padding: 0px 15px;
+	padding: 0px 15px 0px 10px;
+}
+.location-column{
+	padding-left: 0px !important;
+}
+.login-column{
+	padding-right: 0px !important;
 }
 .second-nav{
 	background-color: #02062E;
@@ -1402,6 +1411,7 @@ body .modal-body {
 	float: right;
 }
 
+// cart-two ----------------------
 
 
 
