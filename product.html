@@ -22,126 +22,128 @@
 
 </head>
 <body>
+	
 
+	<a id="button"></a>
 
-        <div id="overlayer"></div>
-		<span class="loader">
-		  <span class="loader-inner"></span>
-		</span>
-        <!-- sidebar -->
+	<div id="overlayer"></div>
+	<span class="loader">
+		<span class="loader-inner"></span>
+	</span>
+	<!-- sidebar -->
 
-		<div id="mySidenav" class="sidenav">
-			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <div class="no-item-cart">
-			  	<h6>Cart</h6>
-			  	<p>Faisal Mart (Johar Town)</p>
-			  </div>
-			  <div class="no-item-cart-img">
-			  	<img src="img/illustrations.png">
-			  </div>
-			  <div class="no-item-cart-content text-center">
-			  	<h6>Your cart is empty</h6>
-			  	<p>Start adding products to fill up your cart and place order</p>
-			  </div>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="no-item-cart">
+			<h6>Cart</h6>
+			<p>Faisal Mart (Johar Town)</p>
 		</div>
-
-		<!-- sidebar -->
-
-
-        <!-- Modal -->
-		<div id="myModal" class="modal fade" role="dialog">
-		  <div class="modal-dialog">
-		    <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-body">
-		      	<div class="row">
-		      		<div class="cart-popup-heading">
-		      			<button type="button" class="close" data-dismiss="modal">&times;</button>
-		      			<h4>Quick ADD</h4>
-		      		</div>
-		      	</div>
-		          <div class="row">
-		          	<div class="col-lg-6 col-md-6 col-sm-12">
-		          		<div class="cart-image">
-		          			<img src="img/product.png">
-		          		</div>
-		          		<div class="sub-cart-images">
-		          			<div class="row">
-		          				<div class="col-lg-3 col-md-3 col-sm-3">
-		          					<div class="sub-cart-object">
-		          						<img src="img/product.png">
-		          					</div>
-		          				</div>
-		          				<div class="col-lg-3 col-md-3 col-sm-3">
-		          					<div class="sub-cart-object">
-		          						<img src="img/product.png">
-		          					</div>
-		          				</div>
-		          				<div class="col-lg-3 col-md-3 col-sm-3">
-		          					<div class="sub-cart-object">
-		          						<img src="img/product.png">
-		          					</div>
-		          				</div>
-		          				<div class="col-lg-3 col-md-3 col-sm-3">
-		          					<div class="sub-cart-object">
-		          						<img src="img/product.png">
-		          					</div>
-		          				</div>
-		          			</div>
-		          		</div>
-		          	</div>
-		          	<div class="col-lg-6 col-md-6 col-sm-12">
-		          		<div class="cart-content">
-		          			<h4>Mitchells Carrot Pickle</h4>
-		          			<h6>Rs.150</h6>
-		          			<div class="weight-list">
-		          				<h6>Weight</h6>
-		          				<label class="checkcontainer">
-								  <span class="radiobtn size-radio">1kg</span>
-								</label>
-								<label class="checkcontainer">
-								  <span class="radiobtn size-radio">2kg</span>
-								</label>
-								<label class="checkcontainer">
-								  <span class="radiobtn size-radio">5kg</span>
-								</label>
-		          			</div>
-		          			<div class="weight-list">
-		          				<h6>Type</h6>
-		          				<label class="checkcontainer">
-								  <span class="radiobtn size-radio">1kg</span>
-								</label>
-								<label class="checkcontainer">
-								  <span class="radiobtn size-radio">2kg</span>
-								</label>
-								<label class="checkcontainer">
-								  <span class="radiobtn size-radio">5kg</span>
-								</label>
-		          			</div>
-		          			<div class="cart-add">
-		          				<div class="form-group">
-							        <div class="input-group">
-							            <div class="input-group-btn">
-							                <button id="down" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
-							            </div>
-							            <input type="text" id="myNumber" class="form-control input-number" value="1" />
-							            <div class="input-group-btn">
-							                <button id="up" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
-							            </div>
-							        </div>
-							    </div>
-							    <span onclick="openNav()">
-							          <button class="btn btn-danger add-cart-button">Add To Cart</button>
-							    </span>
-		          			</div>
-		          		</div>
-		          	</div>
-		          </div>
-		      </div>
-		    </div>
-		  </div>
+		<div class="no-item-cart-img">
+			<img src="img/illustrations.png">
 		</div>
-   <!-- modal -->
+		<div class="no-item-cart-content text-center">
+			<h6>Your cart is empty</h6>
+			<p>Start adding products to fill up your cart and place order</p>
+		</div>
+	</div>
+
+	<!-- sidebar -->
+
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="row">
+						<div class="cart-popup-heading">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4>Quick ADD</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="cart-image">
+								<img src="img/product.png">
+							</div>
+							<div class="sub-cart-images">
+								<div class="row">
+									<div class="col-lg-3 col-md-3 col-sm-3">
+										<div class="sub-cart-object">
+											<img src="img/product.png">
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-3">
+										<div class="sub-cart-object">
+											<img src="img/product.png">
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-3">
+										<div class="sub-cart-object">
+											<img src="img/product.png">
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-3">
+										<div class="sub-cart-object">
+											<img src="img/product.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="cart-content">
+								<h4>Mitchells Carrot Pickle</h4>
+								<h6>Rs.150</h6>
+								<div class="weight-list">
+									<h6>Weight</h6>
+									<label class="checkcontainer">
+										<span class="radiobtn size-radio">1kg</span>
+									</label>
+									<label class="checkcontainer">
+										<span class="radiobtn size-radio">2kg</span>
+									</label>
+									<label class="checkcontainer">
+										<span class="radiobtn size-radio">5kg</span>
+									</label>
+								</div>
+								<div class="weight-list">
+									<h6>Type</h6>
+									<label class="checkcontainer">
+										<span class="radiobtn size-radio">1kg</span>
+									</label>
+									<label class="checkcontainer">
+										<span class="radiobtn size-radio">2kg</span>
+									</label>
+									<label class="checkcontainer">
+										<span class="radiobtn size-radio">5kg</span>
+									</label>
+								</div>
+								<div class="cart-add">
+									<div class="form-group">
+										<div class="input-group">
+											<div class="input-group-btn">
+												<button id="down" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+											</div>
+											<input type="text" id="myNumber" class="form-control input-number" value="1" />
+											<div class="input-group-btn">
+												<button id="up" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+											</div>
+										</div>
+									</div>
+									<span onclick="openNav()">
+										<button class="btn btn-danger add-cart-button">Add To Cart</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal -->
 
 	<!-- structure -->
 	<div class="structure">
@@ -258,12 +260,12 @@
 						<div class="col-lg-6 col-md-12 col-sm-12">
 							<div class="product-sec-price-dropdown text-right">
 								<div class="w3-dropdown-click">
-								  <button onclick="myFunction()" class="w3-button">Sort: Price Low to High<i class="fa fa-angle-down" aria-hidden="true"></i></button>
-								  <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-								    <a href="#" class="w3-bar-item w3-button">Link 1</a>
-								    <a href="#" class="w3-bar-item w3-button">Link 2</a>
-								    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-								  </div>
+									<button onclick="myFunction()" class="w3-button">Sort: Price Low to High<i class="fa fa-angle-down" aria-hidden="true"></i></button>
+									<div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+										<a href="#" class="w3-bar-item w3-button">Link 1</a>
+										<a href="#" class="w3-bar-item w3-button">Link 2</a>
+										<a href="#" class="w3-bar-item w3-button">Link 3</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -272,66 +274,66 @@
 						<div class="col-lg-3 col-md-12 col-sm-12">
 							<div class="product-catagories">
 								<h6>Catagories</h6>
-	                            <div class="accordian-div">
-	                            	<button class="accordion">
-		                            	<span><img src="img/Avatar.png"></span>
-		                            	<h6>Dairy Products</h6>
-		                            	<p>112 items</p>
-		                            </button>
+								<div class="accordian-div">
+									<button class="accordion">
+										<span><img src="img/Avatar.png"></span>
+										<h6>Dairy Products</h6>
+										<p>112 items</p>
+									</button>
 									<div class="panel">
-									  <ul>
-									  	<li><a href="">Milk</a></li>
-									  	<li><a href="">Egg</a></li>
-									  	<li><a href="">Bread</a></li>
-									  	<li><a href="">Pickle</a></li>
-									  </ul>
+										<ul>
+											<li><a href="">Milk</a></li>
+											<li><a href="">Egg</a></li>
+											<li><a href="">Bread</a></li>
+											<li><a href="">Pickle</a></li>
+										</ul>
 									</div>
-	                            </div>
-	                            <div class="accordian-div">
-	                            	<button class="accordion">
-		                            	<span><img src="img/Avatar2.png"></span>
-		                            	<h6>Dairy Products</h6>
-		                            	<p>112 items</p>
-		                            </button>
+								</div>
+								<div class="accordian-div">
+									<button class="accordion">
+										<span><img src="img/Avatar2.png"></span>
+										<h6>Dairy Products</h6>
+										<p>112 items</p>
+									</button>
 									<div class="panel">
-									  <ul>
-									  	<li><a href="">Milk</a></li>
-									  	<li><a href="">Egg</a></li>
-									  	<li><a href="">Bread</a></li>
-									  	<li><a href="">Pickle</a></li>
-									  </ul>
+										<ul>
+											<li><a href="">Milk</a></li>
+											<li><a href="">Egg</a></li>
+											<li><a href="">Bread</a></li>
+											<li><a href="">Pickle</a></li>
+										</ul>
 									</div>
-	                            </div>
-	                            <div class="accordian-div">
-	                            	<button class="accordion">
-		                            	<span><img src="img/Avatar3.png"></span>
-		                            	<h6>Dairy Products</h6>
-		                            	<p>112 items</p>
-		                            </button>
+								</div>
+								<div class="accordian-div">
+									<button class="accordion">
+										<span><img src="img/Avatar3.png"></span>
+										<h6>Dairy Products</h6>
+										<p>112 items</p>
+									</button>
 									<div class="panel">
-									  <ul>
-									  	<li><a href="">Milk</a></li>
-									  	<li><a href="">Egg</a></li>
-									  	<li><a href="">Bread</a></li>
-									  	<li><a href="">Pickle</a></li>
-									  </ul>
+										<ul>
+											<li><a href="">Milk</a></li>
+											<li><a href="">Egg</a></li>
+											<li><a href="">Bread</a></li>
+											<li><a href="">Pickle</a></li>
+										</ul>
 									</div>
-	                            </div>
-	                            <div class="accordian-div">
-	                            	<button class="accordion">
-		                            	<span><img src="img/Avatar4.png"></span>
-		                            	<h6>Dairy Products</h6>
-		                            	<p>112 items</p>
-		                            </button>
+								</div>
+								<div class="accordian-div">
+									<button class="accordion">
+										<span><img src="img/Avatar4.png"></span>
+										<h6>Dairy Products</h6>
+										<p>112 items</p>
+									</button>
 									<div class="panel">
-									  <ul>
-									  	<li><a href="">Milk</a></li>
-									  	<li><a href="">Egg</a></li>
-									  	<li><a href="">Bread</a></li>
-									  	<li><a href="">Pickle</a></li>
-									  </ul>
+										<ul>
+											<li><a href="">Milk</a></li>
+											<li><a href="">Egg</a></li>
+											<li><a href="">Bread</a></li>
+											<li><a href="">Pickle</a></li>
+										</ul>
 									</div>
-	                            </div>
+								</div>
 							</div>
 						</div>
 						<div class="col-lg-9 col-md-12 col-sm-12-">
@@ -345,7 +347,7 @@
 													<h6>20% OFF</h6>
 												</div>
 												<div class="plus-cart">
-					                            <button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
 													<div class="image-marker">
 														<img src="img/Marker.png">
 													</div>
@@ -655,7 +657,7 @@
 	<!-- structure -->
 
 
-  	<!-- jquery -->
+	<!-- jquery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- bootstrap js -->
 	<script src="js/bootstrap.js"></script>

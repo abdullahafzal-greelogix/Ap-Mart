@@ -504,7 +504,7 @@
 
 // catagories
 .catagories{
-	padding: 90px 0px;
+	padding: 60px 0px;
 }
 .catagories-heading{
 	margin-bottom: 40px;
@@ -546,7 +546,7 @@
 	background-color:  #FAFAFA;
 }
 .product-sec{
-	padding: 90px 0px;
+	padding: 60px 0px;
 }
 .product-sec-heading{
 	margin-bottom: 40px;
@@ -869,7 +869,7 @@ body .modal-body {
 
 // conform card -------------------
 .conform-cart{
-	padding: 90px 0px;
+	padding: 60px 0px;
 }
 .conform-cart-main{
 	background-color: white;
@@ -1016,7 +1016,7 @@ body .modal-body {
 // cart-detail --------------------
 
 .cart-map{
-	padding: 90px 0px;
+	padding: 60px 0px;
 }
 .cart-map-heading{
 	background-color: white;
@@ -1187,7 +1187,7 @@ body .modal-body {
 // order-place-sec ----------------
 
 .order-place-sec{
-	padding: 90px 0px;
+	padding: 60px 0px;
 }
 .order-place-img{
 	img{
@@ -1517,7 +1517,46 @@ body .modal-body {
 }
 
 
+// top button scroll ---------
 
+#button {
+  display: inline-block;
+  background-color: #02aa31;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+// top button scroll ---------
 
 
 
