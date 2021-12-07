@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Shop</title>
+	<title>Cart</title>
+	<title>Product</title>
 	<!-- meta tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--style sheet -->
@@ -21,15 +22,102 @@
 </head>
 <body>
 
-	<div id="overlayer"></div>
+      
+   <div id="overlayer"></div>
 		<span class="loader">
 		  <span class="loader-inner"></span>
-		</span>
-    
+	</span>
+
+	<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <div class="no-item-cart">
+		  	<h6>Cart</h6>
+		  	<p>Faisal Mart (Johar Town)</p>
+		  	<div class="product-cart">
+			  	<div class="row">
+			  		<div class="col-lg-6 col-md-6 col-sm-2 pl-0">
+			  			<div class="cart-carrot-item">
+			  				<img src="img/product.png">
+			  				<h6>Mitchells Carrot Pickle</h6>
+			  				<p>340g • Rs.150</p>
+			  			</div>
+			  		</div>
+			  		<div class="col-lg-6 col-md-6 col-sm-12">
+				         <div class="cart-add product-cart-add-item">
+				         	<div class="form-group product-cart-form-group">
+						        <div class="input-group">
+						            <div class="input-group-btn">
+						                <button id="down" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+						            </div>
+						            <input type="text" id="myNumber-two" class="form-control input-number" value="1" />
+						            <div class="input-group-btn">
+						                <button id="up" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+						            </div>
+						        </div>
+						    </div>
+				         </div>
+			  		</div>
+			  	</div>
+			  </div>
+			  <div class="product-cart">
+		  	 <div class="row">
+		  		<div class="col-lg-6 col-md-6 col-sm-2 pl-0">
+		  			<div class="cart-carrot-item">
+		  				<img src="img/olper.png">
+		  				<h6>Mitchells Carrot Pickle</h6>
+		  				<p>340g • Rs.150</p>
+		  			</div>
+		  		</div>
+		  		<div class="col-lg-6 col-md-6 col-sm-12">
+			         <div class="cart-add product-cart-add-item">
+			         	<div class="form-group product-cart-form-group">
+					        <div class="input-group">
+					            <div class="input-group-btn">
+					                <button id="down-two" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+					            </div>
+					            <input type="text" id="myNumber-two" class="form-control input-number" value="1" />
+					            <div class="input-group-btn">
+					                <button id="up-two" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+					            </div>
+					        </div>
+					    </div>
+			         </div>
+		  		</div>
+		  	</div>
+		  </div>
+		  </div>
+		  <div class="order-submit product-cart-order-submit">
+			<div class="total-price-parent cost-detail-final">
+				<div class="total-price">
+					<span>Subtotal</span>
+					<span class="total-price">Rs.450</span>
+				</div>
+				<div class="total-price">
+					<span>Delivery Fee</span>
+					<span class="total-price">-Rs.50</span>
+				</div>
+				<div class="final-price product-cart-final-price">
+					<span>Voucher Applied <a href="">(Remove)</a></span>
+					<span class="total-price">-Rs.50</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-cart-checkout">
+			<div class="checkout-detail">
+				<span>Total</span>
+				<span class="total-checkout">Rs.460</span>
+			</div>
+			<div class="checkout-button">
+				 <a href="cart-detail.html"><button class="btn btn-danger">Checkout</button></a>
+			</div>
+		</div>
+		  
+	</div>
 
     <!-- structure -->
 	<div class="structure">
-		  
+		 
         <!-- header -->
 		<header id="header" class="header">
 			<div class="container">
@@ -127,202 +215,102 @@
 			</div>
 		</section>
 		<!-- second nav -->
-
-		<!-- shop-content -->
-		<section class="shop-content">
-			<div class="shop-content-parent">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12">
-							<div class="shop-div-parent">
-								<div class="shop-div">
-									<div class="row">
-										<div class="col-lg-1 col-md-2 col-sm-1">
-											<div class="shop-online">
-												<h4>G</h4>
-											</div>
-										</div>
-										<div class="col-lg-11 col-md-10 col-sm-11">
-											<div class="shop-name">
-												<h2>Greelogix Shop</h2>
-												<p><i class="fa fa-star" aria-hidden="true"></i> 4.7(104) . 3km away</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+        
+        <!-- structure two -->
+		<div class="structure-two">
+			
+        <!-- conferm cart -->
+		<section class="conform-cart">
+			<div class="container conform-cart-main">
+				<div class="row">
+					<div class="col-lg-1 col-md-2 col-sm-12">
+						<div class="conform-card-img">
+							<ul>
+								<li><img src="img/product.png"></li>
+								<li><img src="img/product.png"></li>
+								<li><img src="img/product.png"></li>
+								<li><img src="img/product.png"></li>
+								<li><img src="img/product.png"></li>
+								<li><img src="img/product.png"></li>
+							</ul>
 						</div>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-12">
+						<div class="conform-cart-full-img">
+							<img src="img/product.png">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="cart-content-parent">
+							<div class="cart-content">
+			          			<h4>Mitchells Carrot Pickle</h4>
+			          			<h6>Rs.150</h6>
+			          			<div class="weight-list">
+			          				<h6>Weight</h6>
+			          				<label class="checkcontainer">
+									  <span class="radiobtn size-radio">1kg</span>
+									</label>
+									<label class="checkcontainer">
+									  <span class="radiobtn size-radio">2kg</span>
+									</label>
+									<label class="checkcontainer">
+									  <span class="radiobtn size-radio">5kg</span>
+									</label>
+			          			</div>
+			          			<div class="weight-list">
+			          				<h6>Type</h6>
+			          				<label class="checkcontainer">
+									  <span class="radiobtn size-radio">1kg</span>
+									</label>
+									<label class="checkcontainer">
+									  <span class="radiobtn size-radio">2kg</span>
+									</label>
+									<label class="checkcontainer">
+									  <span class="radiobtn size-radio">5kg</span>
+									</label>
+			          			</div>
+			          			<div class="cart-add">
+			          				<div class="form-group">
+								        <div class="input-group">
+								            <div class="input-group-btn">
+								                <button id="down" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+								            </div>
+								            <input type="text" id="myNumber" class="form-control input-number" value="1" />
+								            <div class="input-group-btn">
+								                <button id="up" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+								            </div>
+								        </div>
+								    </div>
+								    <span onclick="openNav()">
+								    	<button class="btn btn-danger add-cart-button">Add To Cart</button>
+								    </span>
+			          			</div>
+			          		</div>
+		          		</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- shop-content -->
+		<!-- conferm cart -->
 
-		<!-- catagories -->
-		<section class="catagories">
+		<!-- description -->
+		<section class="description">
 			<div class="container">
 				<div class="row">
-					<div class="'col-lg-6 col-md-12 col-sm-12">
-						<div class="catagories-heading">
-							<h4>Categories</h4>
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="description-parent">
+							<div class="description-heading">
+							<h6>Description</h6>
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata1.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Dairy Products</h6></a>
-							</div>
+						<div class="description-paragraph">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius malesuada tortor, pulvinar varius tellus commodo ac. Nam sapien erat, elementum ut dui sed, pulvinar tristique tortor. Vivamus at feugiat eros. Vestibulum eu risus sit amet odio interdum pellentesque sit amet quis leo.</p>
 						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata2.png">
-							<div class="catagories-content">
-								<a href="cart.html"><h6>Tea & Coffee</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata3.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Frozen Food</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata4.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Baby Items</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata2.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Tea & Coffee</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata1.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Dairy Products</h6></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- row 2 -->
-				<div class="row">
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata1.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Dairy Products</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata2.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Tea & Coffee</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata3.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Frozen Food</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata4.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Baby Items</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata2.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Tea & Coffee</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata1.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Dairy Products</h6></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- row3 -->
-				<div class="row">
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata1.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Dairy Products</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata2.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Tea & Coffee</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata3.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Frozen Food</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata4.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Baby Items</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata2.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Tea & Coffee</h6></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12">
-						<div class="catagories-box">
-							<img src="img/cata1.png">
-							<div class="catagories-content">
-								<a href="product.html"><h6>Dairy Products</h6></a>
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- catagories -->
+
 
 		<!-- footer -->
 		<section class="footer">
@@ -343,12 +331,10 @@
 							<h3>Reach us Out</h3>
 							<ul>
 								<li><a href="">
-									<!-- <i class="fa fa-envelope-o" aria-hidden="true"></i> -->
 									<span>Email: info@pmart.pk 
 								    </span>
 								</a></li>
 								<li><a href="">
-									<!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
 									<span>Phone: 0331-0064323
                                     </span>
 								</a></li>
@@ -384,6 +370,9 @@
 		</section>
 		<!-- footer -->
 
+		</div>
+		<!-- structure two -->
+
 	</div>
 	<!-- structure -->
 
@@ -393,7 +382,9 @@
 	<!-- bootstrap js -->
 	<script src="js/bootstrap.js"></script>
 	<!-- custom js -->
-	<script src="js/custom.js"></script>
+	<script src="js/custom.js"></script> 
+	
+	
 
 </body>
 </html>

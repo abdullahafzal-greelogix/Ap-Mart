@@ -23,11 +23,131 @@
 </head>
 <body>
 
+
+        <div id="overlayer"></div>
+		<span class="loader">
+		  <span class="loader-inner"></span>
+		</span>
+        <!-- sidebar -->
+
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <div class="no-item-cart">
+			  	<h6>Cart</h6>
+			  	<p>Faisal Mart (Johar Town)</p>
+			  </div>
+			  <div class="no-item-cart-img">
+			  	<img src="img/illustrations.png">
+			  </div>
+			  <div class="no-item-cart-content text-center">
+			  	<h6>Your cart is empty</h6>
+			  	<p>Start adding products to fill up your cart and place order</p>
+			  </div>
+		</div>
+
+		<!-- sidebar -->
+
+
+        <!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="cart-popup-heading">
+		      			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		      			<h4>Quick ADD</h4>
+		      		</div>
+		      	</div>
+		          <div class="row">
+		          	<div class="col-lg-6 col-md-6 col-sm-12">
+		          		<div class="cart-image">
+		          			<img src="img/product.png">
+		          		</div>
+		          		<div class="sub-cart-images">
+		          			<div class="row">
+		          				<div class="col-lg-3 col-md-3 col-sm-3">
+		          					<div class="sub-cart-object">
+		          						<img src="img/product.png">
+		          					</div>
+		          				</div>
+		          				<div class="col-lg-3 col-md-3 col-sm-3">
+		          					<div class="sub-cart-object">
+		          						<img src="img/product.png">
+		          					</div>
+		          				</div>
+		          				<div class="col-lg-3 col-md-3 col-sm-3">
+		          					<div class="sub-cart-object">
+		          						<img src="img/product.png">
+		          					</div>
+		          				</div>
+		          				<div class="col-lg-3 col-md-3 col-sm-3">
+		          					<div class="sub-cart-object">
+		          						<img src="img/product.png">
+		          					</div>
+		          				</div>
+		          			</div>
+		          		</div>
+		          	</div>
+		          	<div class="col-lg-6 col-md-6 col-sm-12">
+		          		<div class="cart-content">
+		          			<h4>Mitchells Carrot Pickle</h4>
+		          			<h6>Rs.150</h6>
+		          			<div class="weight-list">
+		          				<h6>Weight</h6>
+		          				<label class="checkcontainer">
+								  <span class="radiobtn size-radio">1kg</span>
+								</label>
+								<label class="checkcontainer">
+								  <span class="radiobtn size-radio">2kg</span>
+								</label>
+								<label class="checkcontainer">
+								  <span class="radiobtn size-radio">5kg</span>
+								</label>
+		          			</div>
+		          			<div class="weight-list">
+		          				<h6>Type</h6>
+		          				<label class="checkcontainer">
+								  <span class="radiobtn size-radio">1kg</span>
+								</label>
+								<label class="checkcontainer">
+								  <span class="radiobtn size-radio">2kg</span>
+								</label>
+								<label class="checkcontainer">
+								  <span class="radiobtn size-radio">5kg</span>
+								</label>
+		          			</div>
+		          			<div class="cart-add">
+		          				<div class="form-group">
+							        <div class="input-group">
+							            <div class="input-group-btn">
+							                <button id="down" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+							            </div>
+							            <input type="text" id="myNumber" class="form-control input-number" value="1" />
+							            <div class="input-group-btn">
+							                <button id="up" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+							            </div>
+							        </div>
+							    </div>
+							    <span onclick="openNav()">
+							          <button class="btn btn-danger add-cart-button">Add To Cart</button>
+							    </span>
+		          			</div>
+		          		</div>
+		          	</div>
+		          </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+   <!-- modal -->
+
 	<!-- structure -->
 	<div class="structure">
 
 		<!-- header -->
-		<header class="header">
+		<header id="header" class="header">
 			<div class="container">
 				<div class="row navbar-row">
 					<div class="col-lg-12 col-md-12 col-sm-12">
@@ -86,7 +206,7 @@
 		<!-- header -->
 
 		<!-- second nav -->
-		<section class="second-nav">
+		<section id="sticky" class="second-nav wow animate__animated animate__fadeInDown">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12">
@@ -224,19 +344,17 @@
 												<div class="img-content">
 													<h6>20% OFF</h6>
 												</div>
-											</div>
-											<div class="product-content">
-												<h6>Mitchells Carrot Pickle</h6>
-												<p>Rs.150</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-3 col-md-3 col-sm-12">
-										<div class="proucts">
-											<div class="product-img">
-												<img src="img/product.png">
-												<div class="img-content">
-													<h6>20% OFF</h6>
+												<div class="plus-cart">
+					                            <button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
+												</div>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
 												</div>
 											</div>
 											<div class="product-content">
@@ -252,6 +370,12 @@
 												<div class="img-content">
 													<h6>20% OFF</h6>
 												</div>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
+												</div>
 											</div>
 											<div class="product-content">
 												<h6>Mitchells Carrot Pickle</h6>
@@ -265,6 +389,32 @@
 												<img src="img/product.png">
 												<div class="img-content">
 													<h6>20% OFF</h6>
+												</div>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
+												</div>
+											</div>
+											<div class="product-content">
+												<h6>Mitchells Carrot Pickle</h6>
+												<p>Rs.150</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-12">
+										<div class="proucts">
+											<div class="product-img">
+												<img src="img/product.png">
+												<div class="img-content">
+													<h6>20% OFF</h6>
+												</div>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
 												</div>
 											</div>
 											<div class="product-content">
@@ -283,19 +433,11 @@
 												<div class="img-content">
 													<h6>20% OFF</h6>
 												</div>
-											</div>
-											<div class="product-content">
-												<h6>Mitchells Carrot Pickle</h6>
-												<p>Rs.150</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-3 col-md-3 col-sm-12">
-										<div class="proucts">
-											<div class="product-img">
-												<img src="img/product.png">
-												<div class="img-content">
-													<h6>20% OFF</h6>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
 												</div>
 											</div>
 											<div class="product-content">
@@ -311,6 +453,12 @@
 												<div class="img-content">
 													<h6>20% OFF</h6>
 												</div>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
+												</div>
 											</div>
 											<div class="product-content">
 												<h6>Mitchells Carrot Pickle</h6>
@@ -324,6 +472,32 @@
 												<img src="img/product.png">
 												<div class="img-content">
 													<h6>20% OFF</h6>
+												</div>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
+												</div>
+											</div>
+											<div class="product-content">
+												<h6>Mitchells Carrot Pickle</h6>
+												<p>Rs.150</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-12">
+										<div class="proucts">
+											<div class="product-img">
+												<img src="img/product.png">
+												<div class="img-content">
+													<h6>20% OFF</h6>
+												</div>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
 												</div>
 											</div>
 											<div class="product-content">
@@ -342,19 +516,11 @@
 												<div class="img-content">
 													<h6>20% OFF</h6>
 												</div>
-											</div>
-											<div class="product-content">
-												<h6>Mitchells Carrot Pickle</h6>
-												<p>Rs.150</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-3 col-md-3 col-sm-12">
-										<div class="proucts">
-											<div class="product-img">
-												<img src="img/product.png">
-												<div class="img-content">
-													<h6>20% OFF</h6>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
 												</div>
 											</div>
 											<div class="product-content">
@@ -370,6 +536,12 @@
 												<div class="img-content">
 													<h6>20% OFF</h6>
 												</div>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
+												</div>
 											</div>
 											<div class="product-content">
 												<h6>Mitchells Carrot Pickle</h6>
@@ -383,6 +555,32 @@
 												<img src="img/product.png">
 												<div class="img-content">
 													<h6>20% OFF</h6>
+												</div>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
+												</div>
+											</div>
+											<div class="product-content">
+												<h6>Mitchells Carrot Pickle</h6>
+												<p>Rs.150</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-12">
+										<div class="proucts">
+											<div class="product-img">
+												<img src="img/product.png">
+												<div class="img-content">
+													<h6>20% OFF</h6>
+												</div>
+												<div class="plus-cart">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/Plus.png"></button>
+													<div class="image-marker">
+														<img src="img/Marker.png">
+													</div>
 												</div>
 											</div>
 											<div class="product-content">
@@ -419,16 +617,8 @@
 						<div class="footer-sec">
 							<h3>Reach us Out</h3>
 							<ul>
-								<li><a href="">
-									<!-- <i class="fa fa-envelope-o" aria-hidden="true"></i> -->
-									<span>Email: info@pmart.pk 
-								    </span>
-								</a></li>
-								<li><a href="">
-									<!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
-									<span>Phone: 0331-0064323
-                                    </span>
-								</a></li>
+								<li><a href=""><span>Email: info@pmart.pk </span></a></li>
+								<li><a href=""><span>Phone: 0331-0064323</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -461,14 +651,8 @@
 		</section>
 		<!-- footer -->
 
-
 	</div>
 	<!-- structure -->
-
-
-
-
-
 
 
   	<!-- jquery -->
@@ -477,5 +661,6 @@
 	<script src="js/bootstrap.js"></script>
 	<!-- custom js -->
 	<script src="js/custom.js"></script> 
+
 </body>
 </html>

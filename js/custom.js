@@ -1,3 +1,4 @@
+
 var wow = new WOW(
   {
     boxClass:     'wow',      // animated element css class (default is wow)
@@ -48,3 +49,70 @@ function myFunction() {
       });
     }
 
+
+
+
+
+    function up(max) {
+    document.getElementById("myNumber-two").value = parseInt(document.getElementById("myNumber-two").value) + 1;
+    if (document.getElementById("myNumber-two").value >= parseInt(max)) {
+        document.getElementById("myNumber-two").value = max;
+    }
+}
+function down(min) {
+    document.getElementById("myNumber-two").value = parseInt(document.getElementById("myNumber-two").value) - 1;
+    if (document.getElementById("myNumber-two").value <= parseInt(min)) {
+        document.getElementById("myNumber-two").value = min;
+    }
+}
+
+
+
+
+    function up(max) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+    if (document.getElementById("myNumber").value >= parseInt(max)) {
+        document.getElementById("myNumber").value = max;
+    }
+}
+function down(min) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+    if (document.getElementById("myNumber").value <= parseInt(min)) {
+        document.getElementById("myNumber").value = min;
+    }
+}
+
+
+
+
+
+
+$(window).scroll(function() {
+    var distanceFromTop = $(this).scrollTop();
+    if (distanceFromTop >= $('#sticky').height()) {
+        $('#sticky').addClass('fixed');
+        $('#sticky').slideDown(500);
+    } else {
+        $('#sticky').hide();
+        $('#sticky').removeClass('fixed');
+    }
+});
+
+
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "540px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+$(window).load(function() {
+  $(".loader").delay(2000).fadeOut("slow");
+  $("#overlayer").delay(2000).fadeOut("slow");
+})
