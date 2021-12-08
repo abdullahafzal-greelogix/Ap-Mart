@@ -21,8 +21,21 @@
 	color: #02AA31 !important;
     }
 }
-.navbar-expand-lg{
-	padding: 10px 0px !important;
+.header-list{
+	margin-top: 15px;
+}
+.header-list-ul{
+	padding-left: 0px;
+	margin-bottom: 0px;
+	li{
+		list-style: none;
+		display: inline-block;
+	}
+	img{
+		@media only screen and (max-width: 576px){
+		   width: 80px;
+	    }
+	}
 }
 .nav-item {
 	a{
@@ -98,7 +111,13 @@
 		position: absolute;
 		left: 33px;
 		top: 16px;
+		@media only screen and (max-width: 768px){
+		    top: 30px;
+	    }
 	}
+	@media only screen and (max-width: 768px){
+		margin-top: 15px;
+	} 
 }
 .app-search:before{
 		content: "";
@@ -132,6 +151,19 @@
 		font-size: 20px;
 		margin-left: 15px;
 		position: relative;
+	}
+}
+.mobile-view-sec{
+	display: none;
+}
+.header{
+	@media only screen and (max-width: 768px) {
+        .destop-view{
+        	display: none;
+        }
+        .mobile-view-sec{
+	        display: block;
+        }
 	}
 }
 // header
@@ -222,6 +254,18 @@
 		position: absolute;
 		right: 0;
 		top: 3px;
+		@media only screen and (max-width: 992px){
+             width: 4%;
+		    position: absolute;
+		    right: 0;
+		    top: 5px;
+		}
+		@media only screen and (max-width: 768px){
+		    width: 6%;
+		    position: absolute;
+		    right: 0;
+		    top: 2px;
+		}
 	}
 }
 .grocy-box{
@@ -230,8 +274,7 @@
 		margin-bottom: 15px;
 		border-radius: 12px;
 	}
-}
-.grocy-content{
+	.grocy-content{
 	a{
 		text-decoration: none !important;
 	}
@@ -275,7 +318,16 @@
     	font-size: 14px;
     	color: #F22D51;
     }
+  }
+  @media only screen and (max-width: 992px){
+  	margin-bottom: 40px;
+  }
 }
+.grocery-last-box{
+  	 @media only screen and (max-width: 992px){
+	  	margin-bottom: 0px;
+	  }
+ }
 // grocry
 
 // grocery store
