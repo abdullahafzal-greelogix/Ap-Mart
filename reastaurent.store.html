@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop</title>
+	<!-- meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- font awsome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- font awsome  -->
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
+	<!-- js animation -->
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script type="text/javascript" src="https://wowjs.uk/dist/wow.min.js"></script>
+</head>
+<body>
+	
+
+	<a id="button"></a>
+
+	
+	<!-- <div id="overlayer"></div>
+	<span class="loader">
+		<span class="loader-inner"></span>
+	</span> -->
+
+	<!-- sidebar cart -->
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="no-item-cart">
+			<h6>Cart</h6>
+			<p>Faisal Mart (Johar Town)</p>
+			<div class="product-cart">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-2 pl-0">
+						<div class="cart-carrot-item">
+							<img src="img/deal-cart.png">
+							<h6>Mitchells Carrot Pickle</h6>
+							<p>340g • Rs.150</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="cart-add product-cart-add-item">
+							<div class="form-group product-cart-form-group">
+								<div class="input-group">
+									<div class="input-group-btn">
+										<button id="down" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+									</div>
+									<input type="text" id="myNumber-two" class="form-control input-number" value="1" />
+									<div class="input-group-btn">
+										<button id="up" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-cart">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-2 pl-0">
+						<div class="cart-carrot-item">
+							<img src="img/deal-cart.png">
+							<h6>Mitchells Carrot Pickle</h6>
+							<p>340g • Rs.150</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="cart-add product-cart-add-item">
+							<div class="form-group product-cart-form-group">
+								<div class="input-group">
+									<div class="input-group-btn">
+										<button id="down-two" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+									</div>
+									<input type="text" id="myNumber-two" class="form-control input-number" value="1" />
+									<div class="input-group-btn">
+										<button id="up-two" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- row 3 -->
+			<div class="product-cart">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-2 pl-0">
+						<div class="cart-carrot-item">
+							<img src="img/deal-cart.png">
+							<h6>Mitchells Carrot Pickle</h6>
+							<p>340g • Rs.150</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="cart-add product-cart-add-item">
+							<div class="form-group product-cart-form-group">
+								<div class="input-group">
+									<div class="input-group-btn">
+										<button id="down-two" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+									</div>
+									<input type="text" id="myNumber-two" class="form-control input-number" value="1" />
+									<div class="input-group-btn">
+										<button id="up-two" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="order-submit product-cart-order-submit">
+			<div class="total-price-parent cost-detail-final">
+				<div class="total-price">
+					<span>Subtotal</span>
+					<span class="total-price">Rs.450</span>
+				</div>
+				<div class="total-price">
+					<span>Delivery Fee</span>
+					<span class="total-price">-Rs.50</span>
+				</div>
+				<div class="final-price product-cart-final-price">
+					<span>Voucher Applied <a href="">(Remove)</a></span>
+					<span class="total-price">-Rs.50</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-cart-checkout">
+			<div class="checkout-detail">
+				<span>Total</span>
+				<span class="total-checkout">Rs.460</span>
+			</div>
+			<div class="checkout-button">
+				<a href="cart-detail.html"><button class="btn btn-danger">Checkout</button></a>
+			</div>
+		</div>
+	</div>
+	<!-- sidebar cart -->
+	
+
+	<!-- structure -->
+	<div class="structure">
+		
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<div class="row navbar-row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="header-list">
+							<ul class="header-list-ul">
+								<li><a href="index.html">
+									<img src="img/main-logo.png">
+								</a></li>
+								<li class="nav-item active">
+									<a class="nav-link" href="index.html">Grocery <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="reastaurent.html">Restaurants</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Medicines</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row navbar-row location-navbar">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-8 location-column">
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-2 pr-0">
+								<div class="app-img">
+									<img src="img/location.png">
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm10 col-10">
+								<div class="ap-location">
+									<h6>Delivering to</h6>
+									<h5>Plot 390, Block N, Phase...</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6 col-4 login-column mobile-view-sec">
+						<div class="app-login">
+							<button class="btn btn-basic">Login</button>
+							<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-12 col-sm-12 col-12 app-search-column">
+						<div class="app-search">
+							<input type="text" placeholder="Search stores for groceries" name="">
+							<i class="fa fa-search app-search-icon" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-12 login-column destop-view">
+						<div class="app-login">
+							<button class="btn btn-basic">Login</button>
+							<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header -->
+
+		<!-- second nav -->
+		<section id="sticky" class="second-nav wow animate__animated animate__fadeInDown">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<nav class="navbar navbar-expand-lg dark-navbar">
+							<a class="navbar-brand" href="#"><img src="img/shop.png"></a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav">
+									<li class="nav-item active">
+										<a class="nav-link" href="#">Dairy <span class="sr-only">(current)</span></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Vegetables</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Fruits</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Baby Care</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Snacks</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- second nav -->
+
+		<!-- shop-content -->
+		<section class="shop-content Restaurant-shop">
+			<div class="shop-content-parent">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="shop-div-parent">
+								<div class="shop-div">
+									<div class="row">
+										<div class="col-lg-1 col-md-2 col-sm-1">
+											<div class="shop-online">
+												<h4>G</h4>
+											</div>
+										</div>
+										<div class="col-lg-11 col-md-10 col-sm-11">
+											<div class="shop-name">
+												<h2>Greelogix Shop</h2>
+												<p><i class="fa fa-star" aria-hidden="true"></i> 4.7(104) . 3km away</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- shop-content -->
+
+		
+		<div class="structure-two">
+			<!-- reastaurent-=deal -->
+			<section class="reastaurent-deal">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="reas-deal-heading">
+								<h4>Deals</h4>
+							</div>
+						</div>
+					</div>
+					<div class="row deal-catagories-row">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="deal-catagories">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="deal-catagories-img">
+											<img src="img/deal1.png">
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-sm-12">
+										<div class="deal-catagories-content">
+											<h6>Deal 1</h6>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit imperdiet ornare. Vestibulum eget...</p>
+											<span>Rs.150</span>
+											<div class="deals-plus-cart">
+												<span onclick="openNav()">
+													<span onclick="openNav()">
+														<button data-toggle="modal" data-target="#myModal"><img src="img/deal-pls.png"></button>
+													</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="deal-catagories">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="deal-catagories-img">
+											<img src="img/deal2.png">
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-sm-12">
+										<div class="deal-catagories-content">
+											<h6>Deal 2</h6>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit imperdiet ornare. Vestibulum eget...</p>
+											<span>Rs.150</span>
+											<div class="deals-plus-cart">
+												<span onclick="openNav()">
+													<span onclick="openNav()">
+														<button data-toggle="modal" data-target="#myModal"><img src="img/deal-pls.png"></button>
+													</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- row catagpories two -->
+
+					<div class="row deal-catagories-row">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="deal-catagories">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="deal-catagories-img">
+											<img src="img/deal3.png">
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-sm-12">
+										<div class="deal-catagories-content">
+											<h6>Deal 3</h6>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit imperdiet ornare. Vestibulum eget...</p>
+											<span>Rs.150</span>
+											<div class="deals-plus-cart">
+												<span onclick="openNav()">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/deal-pls.png"></button>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="deal-catagories">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="deal-catagories-img">
+											<img src="img/deal4.png">
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-sm-12">
+										<div class="deal-catagories-content">
+											<h6>Deal 4</h6>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit imperdiet ornare. Vestibulum eget...</p>
+											<span>Rs.150</span>
+											<div class="deals-plus-cart">
+												<span onclick="openNav()">
+													<span onclick="openNav()">
+														<button data-toggle="modal" data-target="#myModal"><img src="img/deal-pls.png"></button>
+													</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- reastaurent-deal -->
+
+			<!-- reastaurent-deal-two -->
+			<section class="Appetizers-deal">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="reas-deal-heading">
+								<h4>Appetizers</h4>
+							</div>
+						</div>
+					</div>
+					<div class="row deal-catagories-row">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="deal-catagories">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="deal-catagories-img">
+											<img src="img/deal5.png">
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-sm-12">
+										<div class="deal-catagories-content">
+											<h6>Food Name</h6>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit imperdiet ornare. Vestibulum eget...</p>
+											<span>Rs.150</span>
+											<div class="deals-plus-cart">
+												<span onclick="openNav()">
+													<span onclick="openNav()">
+														<button data-toggle="modal" data-target="#myModal"><img src="img/deal-pls.png"></button>
+													</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="deal-catagories">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="deal-catagories-img">
+											<img src="img/deal6.png">
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-sm-12">
+										<div class="deal-catagories-content">
+											<h6>Food Name</h6>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit imperdiet ornare. Vestibulum eget...</p>
+											<span>Rs.150</span>
+											<div class="deals-plus-cart">
+												<span onclick="openNav()">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/deal-pls.png"></button>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- row catagpories two -->
+
+					<div class="row deal-catagories-row">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="deal-catagories">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="deal-catagories-img">
+											<img src="img/deal7.png">
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-sm-12">
+										<div class="deal-catagories-content">
+											<h6>Food Name</h6>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit imperdiet ornare. Vestibulum eget...</p>
+											<span>Rs.150</span>
+											<div class="deals-plus-cart">
+												<span onclick="openNav()">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/deal-pls.png"></button>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="deal-catagories">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="deal-catagories-img">
+											<img src="img/deal8.png">
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-sm-12">
+										<div class="deal-catagories-content">
+											<h6>Food Name</h6>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit imperdiet ornare. Vestibulum eget...</p>
+											<span>Rs.150</span>
+											<div class="deals-plus-cart">
+												<span onclick="openNav()">
+													<button data-toggle="modal" data-target="#myModal"><img src="img/deal-pls.png"></button>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- reastaurent-deal-two -->
+		</div>
+
+
+		<!-- footer -->
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-12">
+						<div class="footer-sec">
+							<img src="img/logo3.png">
+							<ul>
+								<li><a href="">Privacy Policy</a></li>
+								<li><a href="">Terms & Conditions</a></li>
+								<li><a href="">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12">
+						<div class="footer-sec">
+							<h3>Reach us Out</h3>
+							<ul>
+								<li><a href="">
+									<!-- <i class="fa fa-envelope-o" aria-hidden="true"></i> -->
+									<span>Email: info@pmart.pk 
+									</span>
+								</a></li>
+								<li><a href="">
+									<!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+									<span>Phone: 0331-0064323
+									</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12">
+						<div class="footer-sec">
+							<h3>Links</h3>
+							<ul>
+								<li><a href="">Register as a Vendor</a></li>
+								<li><a href="">Register as a Rider</a></li>
+								<li><a href="">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12">
+						<div class="footer-sec">
+							<h3>Download our Application</h3>
+							<img class="social-images" src="img/Playstore.png">
+							<img class="social-images"  src="img/Appstore.png">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="footer-copyright text-center">
+							<p>Copyright © 2021. All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer -->
+
+	</div>
+	<!-- structure -->
+
+
+	<!-- jquery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.js"></script>
+	<!-- custom js -->
+	<script src="js/custom.js"></script>
+
+</body>
+</html>
