@@ -40,10 +40,17 @@
 		display: inline-block;
 	}
 	img{
+		width: 100%;
 		@media only screen and (max-width: 576px){
 			width: 75px;
 		}
 	}
+	.medicine a:before{
+		display: none;
+	}
+}
+.header-list-ul li:first-child{
+	width: 10%;
 }
 .nav-item {
 	a{
@@ -175,6 +182,7 @@
 		font-size: 20px;
 		margin-left: 15px;
 		position: relative;
+		cursor: pointer;
 	}
 }
 .mobile-view-sec{
@@ -1156,14 +1164,14 @@ body .modal-body {
 		padding: 30px;
 		border-radius: 10px;
 		@media only screen and (max-width: 768px){
-           padding: 30px 10px;
+			padding: 30px 10px;
 		}
 		img{
 			width: 5%;
 			position: relative;
 			bottom: 6px;
 			@media only screen and (max-width: 480px){
-              width: 7%;
+				width: 7%;
 			}
 		}
 		h4{
@@ -1220,7 +1228,7 @@ body .modal-body {
 		padding: 30px;
 		border-radius: 10px;
 		@media only screen and (max-width: 768px){
-           padding: 30px 10px;
+			padding: 30px 10px;
 		}
 		h4{
 			font-size: 30px;
@@ -1460,12 +1468,13 @@ body .modal-body {
 	}
 	.cancel-order-button{
 		button{
+			color: red;
 			font-size: 14px;
 			height: 48px;
 			width: 100%;
 			margin-top: 20px;
-			background-color: #F44336;
-			border:1px solid #F44336;
+			background-color: transparent;
+			border:1px solid transparent;
 			font-weight: 500;
 			font-family: "Jost",sans-serf;
 		}
@@ -1555,27 +1564,6 @@ body .modal-body {
 	}
 
 	// cart-two ----------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1688,7 +1676,7 @@ body .modal-body {
 		line-height: 50px;
 		color: #fff;
 		@media only screen and (max-width: 576px){
-           font-size: 20px;
+			font-size: 20px;
 		}
 	}
 	#button:hover {
@@ -1911,6 +1899,8 @@ body .modal-body {
 		}
 	}
 
+	//  reastaurent store p---------------------
+
 
 	// my-accordian
 
@@ -1921,6 +1911,9 @@ body .modal-body {
 		background-color: white;
 		padding: 20px;
 		border-radius: 12px;
+		@media screen and (max-width: 768px){
+			margin-bottom: 15px;
+		}
 		span{
 			color: white;
 			font-size: 14px;
@@ -1952,7 +1945,7 @@ body .modal-body {
 		font-size: 16px;
 		color: #02062E;
 		font-weight: 400;
-	    font-family: 'Jost', sans-serif;
+		font-family: 'Jost', sans-serif;
 	}
 	.card-header{
 		background-color: white !important;
@@ -1973,50 +1966,116 @@ body .modal-body {
 			font-size: 30px;
 			color: #02062E;
 			font-weight: 400;
-	    font-family: 'Jost', sans-serif;
-	    margin-bottom: 30px;
+			font-family: 'Jost', sans-serif;
+			margin-bottom: 30px;
 		}
 	}
 
 	// accordian page-break-before: 
 
 
+	// sync slider 
 
-#sync1 {
-  .item {
-    margin: 5px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-  }
-}
-
-#sync2 {
-	.owl-item{
-		width: 100% !important;
+	#sync1 {
+		.item {
+			margin: 5px;
+			color: #FFF;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			text-align: center;
+		}
 	}
-  .item {
-    margin: 5px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-    cursor: pointer;
-    h1 {
-      font-size: 18px;
-    }
-  }
-  .current .item{
-  }
-  .owl-stage{
-  	display: inline-grid;
-  	width: 100% !important;
-  }
-}
 
+	#sync2 {
+		@media screen and (max-width: 768px){
+			display: none;
+		}
+		.owl-item{
+			width: 100% !important;
+		}
+		.item {
+			margin: 5px;
+			color: #FFF;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			text-align: center;
+			cursor: pointer;
+			h1 {
+				font-size: 18px;
+			}
+		}
+		.current .item{
+		}
+		.owl-stage{
+			display: inline-grid;
+			width: 100% !important;
+		}
+	}
+
+	// sync slider
+
+	// location-modal
+
+	.location-modal{
+		width: 600px !important;
+		@media screen and (max-width: 576px){
+			width: 97% !important;
+		}
+	}
+	.location-modal-content{
+		h4{
+			font-size: 20px;
+			color: #02062E;
+			margin-bottom: 30px;
+			font-weight: 400;
+			font-family: 'Jost', sans-serif;
+		}
+		.location-modal-input{
+			input{
+				padding-left: 15px;
+				border:1px solid #d9d9d9;
+				height: 40px;
+				width: 49%;
+				font-weight: 300;
+				font-family: 'Jost', sans-serif;
+				outline: none;
+				transition: 0.4s;
+			}
+			:hover{
+                border:1px solid black;
+			}
+		}
+	}
+	.locaton-map-button{
+		margin-top: 30px;
+		button{
+			height: 40px;
+			width: 45%;
+			background-color: #02aa31;
+			border: 1px solid #02aa31;
+			color: #fff;
+			font-size: 14px;
+			font-weight: 400;
+			font-family: "Jost",sans-serif;
+		}
+		:hover{
+			background-color: #02aa31 !important;
+			border: 1px solid #02aa31 !important;
+		}
+	}
+	.close-location{
+		position: absolute;
+		right: 20px;
+		top: 30px;
+		font-size: 25px;
+		background-color: transparent;
+		border: none;
+		outline: none !important;
+	}
+
+	// location-modal
 
 
 

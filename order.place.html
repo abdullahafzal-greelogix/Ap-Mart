@@ -20,6 +20,33 @@
 	<script type="text/javascript" src="https://wowjs.uk/dist/wow.min.js"></script>
 </head>
 <body>
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog location-modal">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-body location-modal-content">
+	      	 <button class="close-location" type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4>Where do you want to deliver?</h4>
+	        <div class="location-modal-input text-center">
+	        	<input type="text" placeholder="Pakistan" name="">
+		        <input type="text" placeholder="Lahore" name="">
+		        <input style="width: 98%; margin-top: 10px;" class="Select-area" type="text" placeholder="Select Area" name="">
+	        </div>
+	        <div class="location-map">
+	        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.2450727505698!2d74.2739465151359!3d31.46244395714813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919030aa87cbaab%3A0xdc0b0c45ee2f8e2d!2sGreeLogix%20-%20A%20technology%20company!5e0!3m2!1sen!2s!4v1640075168036!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	        </div>
+	        <div class="locaton-map-button text-center">
+	        	<button class="btn btn-danger">Continue</button>
+	        </div>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+	<!-- Modal -->
 	
 	<a id="button"></a>
 
@@ -27,6 +54,122 @@
 	<span class="loader">
 		<span class="loader-inner"></span>
 	</span> -->
+
+
+	<!-- sidecart -->
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="no-item-cart">
+			<h6>Cart</h6>
+			<p>Faisal Mart (Johar Town)</p>
+			<div class="product-cart">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-6 pl-0">
+						<div class="cart-carrot-item">
+							<img src="img/product.png">
+							<h6>Mitchells Carrot Pickle</h6>
+							<p>340g • Rs.150</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+						<div class="cart-add product-cart-add-item">
+							<div class="form-group product-cart-form-group">
+								<div class="input-group">
+									<div class="input-group-btn">
+										<button id="down" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+									</div>
+									<input type="text" id="myNumber-two" class="form-control input-number" value="1" />
+									<div class="input-group-btn">
+										<button id="up" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-cart">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-6 pl-0">
+						<div class="cart-carrot-item">
+							<img src="img/olper.png">
+							<h6>Mitchells Carrot Pickle</h6>
+							<p>340g • Rs.150</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+						<div class="cart-add product-cart-add-item">
+							<div class="form-group product-cart-form-group">
+								<div class="input-group">
+									<div class="input-group-btn">
+										<button id="down-two" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+									</div>
+									<input type="text" id="myNumber-two" class="form-control input-number" value="1" />
+									<div class="input-group-btn">
+										<button id="up-two" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- row 3 -->
+			<div class="product-cart">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-6 pl-0">
+						<div class="cart-carrot-item">
+							<img src="img/olper.png">
+							<h6>Mitchells Carrot Pickle</h6>
+							<p>340g • Rs.150</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+						<div class="cart-add product-cart-add-item">
+							<div class="form-group product-cart-form-group">
+								<div class="input-group">
+									<div class="input-group-btn">
+										<button id="down-two" class="btn btn-default" onclick=" down('0')"><img src="img/delete.png"></button>
+									</div>
+									<input type="text" id="myNumber-two" class="form-control input-number" value="1" />
+									<div class="input-group-btn">
+										<button id="up-two" class="btn btn-default" onclick="up('10')"><img src="img/plus.png"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="order-submit product-cart-order-submit">
+			<div class="total-price-parent cost-detail-final">
+				<div class="total-price">
+					<span>Subtotal</span>
+					<span class="total-price">Rs.450</span>
+				</div>
+				<div class="total-price">
+					<span>Delivery Fee</span>
+					<span class="total-price">-Rs.50</span>
+				</div>
+				<div class="final-price product-cart-final-price">
+					<span>Voucher Applied <a href="">(Remove)</a></span>
+					<span class="total-price">-Rs.50</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-cart-checkout">
+			<div class="checkout-detail">
+				<span>Total</span>
+				<span class="total-checkout">Rs.460</span>
+			</div>
+			<div class="checkout-button">
+				<a href="cart-detail.html"><button class="btn btn-danger">Checkout</button></a>
+			</div>
+		</div>
+	</div>
 
 	<!-- structure -->
 	<div class="strucure">
@@ -47,7 +190,7 @@
 								<li class="nav-item">
 									<a class="nav-link" href="reastaurent.html">Restaurants</a>
 								</li>
-								<li class="nav-item">
+								<li class="nav-item medicine">
 									<a class="nav-link" href="#">Medicines</a>
 								</li>
 							</ul>
@@ -63,17 +206,21 @@
 								</div>
 							</div>
 							<div class="col-lg-10 col-md-10 col-sm10 col-10">
-								<div class="ap-location">
-									<h6>Delivering to</h6>
-									<h5>Plot 390, Block N, Phase...</h5>
-								</div>
+								<a style="text-decoration: none;" data-toggle="modal" data-target="#myModal" href="">
+									<div class="ap-location">
+										<h6>Delivering to</h6>
+										<h5>Plot 390, Block N, Phase...</h5>
+									</div>
+							    </a>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-2 col-md-6 col-sm-6 col-4 login-column mobile-view-sec">
 						<div class="app-login">
 							<button class="btn btn-basic">Login</button>
-							<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							<span onclick="openNav()">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</span>
 						</div>
 					</div>
 					<div class="col-lg-7 col-md-12 col-sm-12 col-12 app-search-column">
@@ -85,7 +232,9 @@
 					<div class="col-lg-2 col-md-2 col-sm-12 col-12 login-column destop-view">
 						<div class="app-login">
 							<button class="btn btn-basic">Login</button>
-							<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							<span onclick="openNav()">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -171,7 +320,7 @@
 								</div>
 							</div>
 							<div class="cancel-order-button">
-								<button class="btn btn-danger">Cancel Order</button>
+								<button class="btn btn-basic">Cancel Order</button>
 							</div>
 						</div>
 					</div>
